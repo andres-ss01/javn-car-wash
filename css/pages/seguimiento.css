@@ -1,0 +1,65 @@
+.track {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0 20px
+}
+
+.track:before,
+.track .fill {
+    content: "";
+    position: absolute;
+    top: 21px;
+    left: 12%;
+    height: 6px;
+    border-radius: 9px;
+    background: var(--bd)
+}
+
+.track:before {
+    right: 12%
+}
+
+.track .fill {
+    background: linear-gradient(90deg, var(--mint), var(--neon));
+    box-shadow: 0 0 16px var(--neon);
+    transition: width 1.2s ease;
+    right: auto
+}
+
+.dot {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    flex: 1;
+    font-size: .85rem;
+    color: var(--mut)
+}
+
+.dot b {
+    display: grid;
+    place-items: center;
+    width: 46px;
+    height: 46px;
+    margin: 0 auto 8px;
+    border-radius: 50%;
+    background: var(--card);
+    border: 2px solid var(--bd)
+}
+
+.dot.done b {
+    background: var(--mint);
+    color: var(--black);
+    border-color: var(--mint)
+}
+
+.dot.now b {
+    border-color: var(--neon);
+    color: var(--neon);
+    animation: pulse 1.8s infinite
+}
+
+.dot.now,
+.dot.done {
+    color: #fff
+}

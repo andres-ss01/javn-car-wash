@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JAVN Car Wash | Inicio</title>
+    <meta name="description" content="JAVN Car Wash: agenda tu lavado y sigue tu vehículo en tiempo real.">
+    <meta property="og:title" content="JAVN Car Wash | Inicio">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Agenda tu cita y sigue tu vehículo en tiempo real.">
+    <meta name="robots" content="index">
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%2372C2B6'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/pages/home.css">
+</head>
+
+<body data-page="home" data-layout="site" data-roles="">
+    <main id="app" class="home">
+        <div id="home-guest">
+        <section class="wrap hero">
+            <div class="hero-copy">
+                <h1>Tu auto merece <span>brillar.</span></h1>
+                <p>Limpieza y cuidado automotriz con calidad, confianza y atención personalizada.</p>
+                <div class="row">
+                    <a class="btn" href="/pages/reservar-cita.html">Reservar servicio</a>
+                    <a class="btn outline" href="/pages/servicios.html">Ver servicios</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="car-card">
+                    <svg viewBox="0 0 400 160" role="img" aria-label="Auto deportivo con espuma" width="100%">
+                        <g fill="#72C2B6">
+                            <path d="M20 110c0-18 30-34 90-40l50-28c30-10 80-10 110 6l60 22c40 6 50 18 50 40v14H20z" />
+                            <circle cx="110" cy="124" r="26" fill="#0B0F17" stroke="#72C2B6" stroke-width="6" />
+                            <circle cx="305" cy="124" r="26" fill="#0B0F17" stroke="#72C2B6" stroke-width="6" />
+                            <circle cx="60" cy="30" r="12" opacity=".6" />
+                            <circle cx="90" cy="14" r="7" opacity=".5" />
+                            <circle cx="330" cy="26" r="10" opacity=".6" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-top">
+                        <div>
+                            <b>LAVADO COMPLETO</b>
+                            <p>Desde <strong>$199</strong></p>
+                        </div>
+                        <span class="ico-badge" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9zM19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z" /></svg>
+                        </span>
+                    </div>
+                    <a class="btn block" href="/pages/reservar-cita.html">RESERVAR AHORA</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="trust" aria-label="Por qué elegirnos">
+            <ul class="wrap">
+                <li>
+                    <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" /><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7" /></svg></span>
+                    Atención personalizada
+                </li>
+                <li>
+                    <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.6-3.2 8-8 9-4.8-1-8-4.4-8-9V6z" /><path d="M8.5 12.2l2.5 2.5 4.5-4.7" /></svg></span>
+                    Productos de calidad
+                </li>
+                <li>
+                    <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l2.2 6.8L21 12l-6.8 2.2L12 21l-2.2-6.8L3 12l6.8-2.2z" /></svg></span>
+                    Resultados que brillan
+                </li>
+            </ul>
+        </section>
+
+        <section class="wrap">
+            <h2>Nuestros servicios</h2>
+            <div id="svc" class="svc-grid"></div>
+        </section>
+
+        <section class="wrap" id="cta-wrap">
+            <div class="cta">
+                <span class="cta-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9zM19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z" /></svg></span>
+                <div class="cta-text">
+                    <h3>Empieza a cuidar tu auto hoy</h3>
+                    <p>Crea tu cuenta para reservar fácilmente y dar seguimiento a tus servicios.</p>
+                </div>
+                <div class="cta-actions">
+                    <a class="btn sm" href="/pages/registro.html">Crear cuenta gratis</a>
+                    <a class="btn outline sm" href="/pages/login.html">Ya tengo cuenta</a>
+                </div>
+            </div>
+        </section>
+        </div>
+
+        <!-- Pantalla original: se muestra cuando hay sesión iniciada -->
+        <div id="home-user" hidden>
+            <section class="hero">
+                <div>
+                    <h1>Encuentra todo tipo de <span>servicios</span> aquí!</h1>
+                    <div class="row"><a class="btn" href="/pages/reservar-cita.html">Agendar cita</a><a class="btn"
+                            href="/pages/seguimiento.html">Seguimiento</a><a class="btn"
+                            href="/pages/servicios.html">Servicios</a></div>
+                </div>
+                <div>
+                    <div class="card"><svg viewBox="0 0 400 160" role="img" aria-label="Auto deportivo con espuma"
+                            width="100%">
+                            <g fill="#72C2B6">
+                                <path d="M20 110c0-18 30-34 90-40l50-28c30-10 80-10 110 6l60 22c40 6 50 18 50 40v14H20z" />
+                                <circle cx="110" cy="124" r="26" fill="#0B0F17" stroke="#72C2B6" stroke-width="6" />
+                                <circle cx="305" cy="124" r="26" fill="#0B0F17" stroke="#72C2B6" stroke-width="6" />
+                                <circle cx="60" cy="30" r="12" opacity=".6" />
+                                <circle cx="90" cy="14" r="7" opacity=".5" />
+                                <circle cx="330" cy="26" r="10" opacity=".6" />
+                            </g>
+                        </svg></div>
+                    <div class="card offer">
+                        <div style="display:flex;justify-content:space-between"><span>LAVADO COMPLETO</span><span
+                                class="price">$199</span></div><a href="/pages/reservar-cita.html" class="btn"
+                            style="display:block;text-align:center;margin-top:12px;background:var(--black);color:#fff">AGENDAR
+                            YA</a>
+                    </div>
+                </div>
+            </section>
+            <h2 class="reveal">Nuestros servicios</h2>
+            <div id="svc-user" class="grid"></div>
+            <h2 class="reveal">Sobre nosotros</h2>
+            <div class="card reveal">
+                <p>En JAVN Car Wash brindamos servicios de limpieza y cuidado automotriz con calidad, confianza y atención
+                    personalizada.</p>
+                <p style="margin-top:12px"><a class="mint" href="/pages/nosotros.html">Conoce nuestra misión, visión y
+                        valores →</a></p>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="/js/app.js"></script>
+</body>
+
+</html>

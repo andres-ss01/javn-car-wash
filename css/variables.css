@@ -1,0 +1,15 @@
+:root {
+    --black: #0B0F17;
+    --mint: #72C2B6;
+    --neon: #00F2FE;
+    --card: #161B22;
+    --glass: rgba(255, 255, 255, .05);
+    --bd: rgba(255, 255, 255, .12);
+    --purple: #C084FC;
+    --pink: #E879F9;
+    --txt: #F1F5F9;
+    --mut: #AAB4C3;
+    --bad: #fda4af;
+    --r: 28px;
+    --font: 'Outfit', 'Inter', system-ui, sans-serif
+}
